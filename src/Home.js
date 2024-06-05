@@ -5,17 +5,17 @@ import { useState } from 'react';
 const Home = () => {
     const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
     const [blogData, setblogData] = useState(blogs);
-    const { category, setCategory } = useState('');
-    const handleFilter = (category) => {
+    // const { category, setCategory } = useState('');
+    // const handleFilter = (category) => {
 
-        if (category == blogData.category) {
-            fetch('http://localhost:8000/blogs/' + blogData.id,
-                {
-                    method: "GET"
-                })
-        }
-        console.log()
-    }
+    //     if (category === blogData.category) {
+    //         fetch('http://localhost:8000/blogs/' + blogData.id,
+    //             {
+    //                 method: "GET"
+    //             })
+    //     }
+    //     console.log()
+    // }
 
     return (
         <div className='home'>

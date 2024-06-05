@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import React, { useState } from 'react';
+import React from 'react';
 
 const BlogList = ({ blogs, title }) => {
-    const { category, setCategory } = useState('');
+    // const { category, setCategory } = useState('');
 
 
     return (
@@ -10,7 +10,7 @@ const BlogList = ({ blogs, title }) => {
         <div className="BlogList">
 
 
-            <div className="list-flex-heading">
+            {/* <div className="list-flex-heading">
 
                 <div className="list-flex-heading-1" > <h2>{title}</h2> </div>
 
@@ -33,7 +33,7 @@ const BlogList = ({ blogs, title }) => {
 
                 </div>
 
-            </div>
+            </div> */}
 
 
             {blogs.map((blog) =>
